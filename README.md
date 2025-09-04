@@ -1,6 +1,6 @@
 # Chhota Pandit
 
-**Chhota Pandit** is a fast-paced, hilarious party game where players get their teammates to guess Indian pop-culture references — from Bollywood stars and cricket legends to mythological figures, everyday characters, and desi memes.
+**Chhota Pandit** is a fast-paced, hilarious party game where players get their teammates to guess Indian pop-culture references — from Bollywood stars and cricket legends to advertisements, everyday characters, and desi memes.
 
 It’s simple, silly, and guaranteed to spark laughs.
 
