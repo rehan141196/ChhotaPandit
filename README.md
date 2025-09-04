@@ -17,8 +17,8 @@ The game is played over **three rounds** using the **same set of cards**. With e
 ## 🎮 Rules
 
 ### Setup
-1. Divide players into two teams.
-2. Each player is shown N cards and must choose N/2 cards to be added to the deck (N depends on number of players)
+1. Divide players into two teams. The recommended number of players is 6 to 12.
+2. Each player is shown 16 cards and must choose 8 cards to be added to the deck.
 
 ### Round 1: **Free Description**
 - On your turn, draw a card.
