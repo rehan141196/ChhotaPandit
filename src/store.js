@@ -96,6 +96,7 @@ class GameStore {
       timerInterval: null,
       turnGuessedCards: [],
       turnSkippedCards: [],
+      turnReshuffledCards: [], // Cards that were reshuffled back into play this turn
       teamScores: [[], []], // Team scores by round
       lastTurnSummary: null, // Summary of the last completed turn
     };
@@ -431,6 +432,7 @@ class GameStore {
     this.state.timerSeconds = this.state.config?.timerSeconds || 60;
     this.state.turnGuessedCards = [];
     this.state.turnSkippedCards = [];
+    this.state.turnReshuffledCards = [];
     this.state.lastTurnSummary = null; // Clear previous turn summary
 
     // Draw the first card
@@ -504,16 +506,33 @@ class GameStore {
     };
 
     // Return any remaining skipped cards to the draw pile for future turns
-    if (this.state.turnSkippedCards.length > 0) {
-      const skippedCardIds = this.state.turnSkippedCards.map(card => card.id);
+    const cardsToReturn = [];
 
-      // Insert skipped cards randomly back into the draw pile
-      skippedCardIds.forEach(cardId => {
+    // Add skipped cards
+    if (this.state.turnSkippedCards.length > 0) {
+      cardsToReturn.push(...this.state.turnSkippedCards.map(card => card.id));
+    }
+
+    // Add current card if it exists - always return it to maintain card count
+    if (this.state.currentCard) {
+      cardsToReturn.push(this.state.currentCard.id);
+    }
+
+    if (cardsToReturn.length > 0) {
+      // Only add cards that are not already in the draw pile
+      const cardsToAdd = cardsToReturn.filter(cardId =>
+        !this.state.drawPile.includes(cardId)
+      );
+
+      // Insert remaining cards randomly back into the draw pile
+      cardsToAdd.forEach(cardId => {
         const insertPosition = Math.floor(Math.random() * (this.state.drawPile.length + 1));
         this.state.drawPile.splice(insertPosition, 0, cardId);
       });
 
-      console.log(`Returned ${skippedCardIds.length} skipped cards to draw pile for future turns`);
+      if (cardsToAdd.length > 0) {
+        console.log(`Returned ${cardsToAdd.length} skipped cards to draw pile for future turns`);
+      }
     }
 
     // Clear turn state
@@ -521,6 +540,7 @@ class GameStore {
     this.state.currentCard = null;
     this.state.turnGuessedCards = [];
     this.state.turnSkippedCards = [];
+    this.state.turnReshuffledCards = [];
 
     // Move to next player
     this.nextPlayer();
@@ -574,6 +594,9 @@ class GameStore {
 
     console.log(`Card skipped: ${this.state.currentCard.title}`);
 
+    // Clear current card before drawing next one to avoid double-counting in reshuffle
+    this.state.currentCard = null;
+
     // Draw next card if available and timer hasn't expired
     this.drawCard();
 
@@ -610,22 +633,26 @@ class GameStore {
   drawCard() {
     // If draw pile is empty but we have skipped cards in this turn, reshuffle them back
     if (this.state.drawPile.length === 0 && this.state.turnSkippedCards.length > 0) {
-      // Reshuffle skipped cards back into draw pile
-      const skippedCardIds = this.state.turnSkippedCards.map(card => card.id);
+      // Reshuffle only the skipped cards back into the draw pile
+      const cardsToReshuffle = [...this.state.turnSkippedCards];
+      const cardIdsToReshuffle = cardsToReshuffle.map(card => card.id);
 
-      // Shuffle the skipped cards randomly
-      for (let i = skippedCardIds.length - 1; i > 0; i--) {
+      // Track these cards as reshuffled so we don't double-add them at turn end
+      this.state.turnReshuffledCards.push(...cardsToReshuffle);
+
+      // Shuffle the cards randomly
+      for (let i = cardIdsToReshuffle.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [skippedCardIds[i], skippedCardIds[j]] = [skippedCardIds[j], skippedCardIds[i]];
+        [cardIdsToReshuffle[i], cardIdsToReshuffle[j]] = [cardIdsToReshuffle[j], cardIdsToReshuffle[i]];
       }
 
       // Add them back to the draw pile
-      this.state.drawPile.push(...skippedCardIds);
+      this.state.drawPile.push(...cardIdsToReshuffle);
 
       // Clear the skipped cards from the current turn since they're back in play
       this.state.turnSkippedCards = [];
 
-      console.log(`Reshuffled ${skippedCardIds.length} skipped cards back into draw pile`);
+      console.log(`Reshuffled ${cardIdsToReshuffle.length} cards back into draw pile`);
     }
 
     if (this.state.drawPile.length === 0) {
@@ -721,6 +748,7 @@ class GameStore {
       timerInterval: null,
       turnGuessedCards: [],
       turnSkippedCards: [],
+      turnReshuffledCards: [],
       teamScores: [[], []], // Team scores by round
     };
     this.notifyListeners();
