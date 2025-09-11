@@ -20,7 +20,8 @@ This document provides a comprehensive specification for implementing **Chhota P
 ## 2. Gameplay Flow
 
 1. **Team Setup**
-   - Prompt user to enter team names.
+   - Prompt user to enter team names and the names of the players.
+   - There must be exactly two teams and the player names are required
    - Teams must have **3–6 players each**.
    - Teams can be uneven but only by **1 player difference**.
 
@@ -60,7 +61,7 @@ This document provides a comprehensive specification for implementing **Chhota P
 7. **Scoring**
    - Each card has a point value (1–4).
    - Scores recorded **per turn**.
-   - Tally occurs **at the end of each round**.
+   - Tally occurs **at the end of each round** and there is also a live scoreboard
    - Scoreboard shows **round-by-round breakdown** and cumulative totals.
 
 8. **Winning Condition**
@@ -71,6 +72,7 @@ This document provides a comprehensive specification for implementing **Chhota P
 ## 3. Data Structures
 
 ### 3.1 Card JSON Schema
+
 ```json
 {
   "cards": [
@@ -91,6 +93,7 @@ This document provides a comprehensive specification for implementing **Chhota P
 - **category**: string (placeholder categories acceptable initially).
 
 ### 3.2 In-Memory State
+
 ```js
 {
   teams: [
@@ -192,4 +195,3 @@ This document provides a comprehensive specification for implementing **Chhota P
 ---
 
 **End of Specification**
-
