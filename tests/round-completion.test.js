@@ -49,9 +49,8 @@ describe('Round Completion Functionality', () => {
         if (!state.turnActive) {
           try {
             gameStore.startTurn();
-          } catch (error) {
+          } catch {
             // If we can't start a turn, we might be done
-            console.log(`Cannot start turn: ${error.message}`);
             break;
           }
         }
@@ -165,7 +164,6 @@ describe('Round Completion Functionality', () => {
       const team2Score = finalState.teamScores[1][0];
 
       expect(team1Score + team2Score).toBeGreaterThan(0);
-      console.log(`Final scores - Team 1: ${team1Score}, Team 2: ${team2Score}`);
     });
 
     test('should handle skipped cards in score calculation', () => {

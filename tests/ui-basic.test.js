@@ -162,7 +162,6 @@ describe('UI Interaction Tests', () => {
   describe('Error Handling', () => {
     it('should handle UI errors gracefully', () => {
       const handleUIError = (error) => {
-        console.error('UI Error:', error);
         return { success: false, error: error.message };
       };
 

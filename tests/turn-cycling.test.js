@@ -38,8 +38,6 @@ describe('Turn Cycling', () => {
     // Start Round 1
     gameStore.startRound(1);
 
-    console.log('Player order:', playerOrder);
-    console.log('Starting player index:', gameStore.getState().currentPlayerIndex);
 
     // Track turn history for verification
     const turnHistory = [];
@@ -59,7 +57,6 @@ describe('Turn Cycling', () => {
         cycle: Math.floor(turnNum / totalPlayers) + 1
       });
 
-      console.log(`Turn ${turnNum + 1}: Player ${currentPlayer} (index ${currentPlayerIndex})`);
 
       // Play the turn
       gameStore.startTurn();
@@ -67,7 +64,6 @@ describe('Turn Cycling', () => {
       gameStore.endTurn();
     }
 
-    console.log('Turn history:', turnHistory);
 
     // Verify first cycle (turns 1-4)
     for (let i = 0; i < totalPlayers; i++) {
@@ -119,7 +115,6 @@ describe('Turn Cycling', () => {
     // Start Round 1
     gameStore.startRound(1);
 
-    console.log('Player order with uneven teams:', playerOrder);
 
     const totalPlayers = playerOrder.length;
     const turnHistory = [];
@@ -142,7 +137,6 @@ describe('Turn Cycling', () => {
       gameStore.endTurn();
     }
 
-    console.log('Turn history with uneven teams:', turnHistory);
 
     // Verify that player indices follow expected pattern: 0, 1, 2, 3, 4, 0, 1, 2...
     for (let i = 0; i < turnHistory.length; i++) {
@@ -209,7 +203,6 @@ describe('Turn Cycling', () => {
       gameStore.endTurn();
     }
 
-    console.log('Team alternation across cycles:', turnHistory);
 
     // Verify no team goes twice in a row across the entire sequence
     for (let i = 1; i < turnHistory.length; i++) {
@@ -282,7 +275,6 @@ describe('Turn Cycling', () => {
       }
     }
 
-    console.log('Turn cycling across rounds:', turnHistory);
 
     // Verify that player order continues properly across round transition
     // Round 1: Player 0, 1, 2

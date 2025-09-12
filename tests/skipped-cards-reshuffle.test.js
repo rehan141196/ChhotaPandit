@@ -86,10 +86,6 @@ describe('Skipped Cards Reshuffle Bug Fix', () => {
     gameStore.endTurn();
     state = gameStore.getState();
 
-    // Debug logging
-    console.log('After endTurn - drawPile:', state.drawPile.length);
-    console.log('After endTurn - guessedOnce:', state.guessedOnce.size);
-    console.log('After endTurn - turnSkippedCards:', state.turnSkippedCards.length);
 
     // After turn ends, all skipped cards should be back in draw pile
     // The total number of cards should equal the original deck size

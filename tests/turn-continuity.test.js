@@ -42,15 +42,10 @@ describe('Turn Order Continuity', () => {
     const initialPlayerOrder = [...gameStore.getState().playerOrder];
     let currentPlayerIndex = gameStore.getState().currentPlayerIndex;
 
-    console.log('Initial player order:', initialPlayerOrder);
-    console.log('Starting with player index:', currentPlayerIndex, '- Player:', initialPlayerOrder[currentPlayerIndex]);
 
     // Simulate some turns in Round 1
     // Let's say we play 3 turns
     for (let i = 0; i < 3; i++) {
-      const currentPlayer = initialPlayerOrder[currentPlayerIndex];
-      console.log(`Round 1, Turn ${i + 1}: Player ${currentPlayer} (index ${currentPlayerIndex})`);
-
       gameStore.startTurn();
       gameStore.guessCurrent(); // Guess one card
       gameStore.endTurn();
@@ -61,7 +56,6 @@ describe('Turn Order Continuity', () => {
 
     // Record the player who should go next
     const playerBeforeRoundTransition = initialPlayerOrder[currentPlayerIndex];
-    console.log('Player who should start Round 2:', playerBeforeRoundTransition, '(index', currentPlayerIndex, ')');
 
     // Advance to Round 2
     const nextRoundSuccess = gameStore.nextRound();
@@ -71,7 +65,6 @@ describe('Turn Order Continuity', () => {
     const playerAfterRoundTransition = initialPlayerOrder[gameStore.getState().currentPlayerIndex];
     const newCurrentPlayerIndex = gameStore.getState().currentPlayerIndex;
 
-    console.log('Player who actually starts Round 2:', playerAfterRoundTransition, '(index', newCurrentPlayerIndex, ')');
 
     // The current player index should be the same
     expect(newCurrentPlayerIndex).toBe(currentPlayerIndex);
@@ -90,8 +83,6 @@ describe('Turn Order Continuity', () => {
     const nextPlayer = initialPlayerOrder[nextPlayerIndex];
     const expectedNextPlayer = initialPlayerOrder[expectedNextIndex];
 
-    console.log('Next player after first Round 2 turn:', nextPlayer, '(index', nextPlayerIndex, ')');
-    console.log('Expected next player:', expectedNextPlayer, '(index', expectedNextIndex, ')');
 
     expect(nextPlayerIndex).toBe(expectedNextIndex);
     expect(nextPlayer).toBe(expectedNextPlayer);
@@ -155,7 +146,6 @@ describe('Turn Order Continuity', () => {
       }
     }
 
-    console.log('Turn history:', turnHistory);
 
     // Check that no team goes twice in a row
     for (let i = 1; i < turnHistory.length; i++) {
