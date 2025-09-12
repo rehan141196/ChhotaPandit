@@ -1,6 +1,7 @@
 import './styles.css';
 import gameStore from './store.js';
 import { getCategories } from './cards.js';
+import { validatePassword, isAuthenticated, setAuthenticated, logout } from './auth.js';
 
 // Initialize the Chhota Pandit app
 let timerExpiredHandled = false; // Flag to prevent multiple timer expiration handling
@@ -9,10 +10,61 @@ document.addEventListener('DOMContentLoaded', () => {
   const app = document.querySelector('#app');
 
   if (app) {
+    // Check authentication first
+    if (isAuthenticated()) {
+      // User is authenticated, show the game
+      initializeGameApp(app);
+    } else {
+      // User is not authenticated, show login screen
+      initializeLoginScreen(app);
+    }
+  }
+
+  console.log('Chhota Pandit app initialized');
+});
+
+function initializeLoginScreen(app) {
+  app.innerHTML = `
+    <div class="login-container">
+      <div class="login-card">
+        <div class="login-header">
+          <h1>Chhota Pandit</h1>
+          <p>Enter password to access the game</p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <div class="password-group">
+            <input
+              type="password"
+              id="passwordInput"
+              placeholder="Enter password"
+              required
+              autocomplete="off"
+            >
+          </div>
+
+          <button type="submit" class="login-button">
+            Access Game
+          </button>
+
+          <div id="loginError" class="login-error hidden">
+            Incorrect password. Please try again.
+          </div>
+        </form>
+      </div>
+    </div>
+  `;
+
+  // Set up login event handlers
+  setupLoginHandlers();
+}
+
+function initializeGameApp(app) {
     app.innerHTML = `
       <header>
         <h1>Chhota Pandit</h1>
         <p>Party Word-Guessing Game</p>
+        <button type="button" id="logoutBtn" class="logout-btn">Logout</button>
       </header>
 
       <main>
@@ -66,10 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <div class="setup-section">
             <h3>Categories</h3>
-            <select id="categorySelect" multiple size="6">
-              <option value="placeholder">Loading categories...</option>
-            </select>
-            <small>Hold Ctrl/Cmd to select multiple categories</small>
+            <div id="categoryTiles" class="category-tiles">
+              <div class="category-loading">Loading categories...</div>
+            </div>
+            <small>Select multiple categories for variety</small>
           </div>
 
           <div class="setup-section">
@@ -133,6 +185,12 @@ document.addEventListener('DOMContentLoaded', () => {
         <!-- Game View -->
         <section id="gameView" class="view hidden">
           <h2>Round <span id="currentRound">1</span></h2>
+
+          <div class="round-rules">
+            <div id="roundHints" class="round-hints">
+              <strong>Say Anything:</strong> Use any words or phrases to describe the card.
+            </div>
+          </div>
 
           <div class="game-info">
             <div class="current-player">
@@ -268,8 +326,6 @@ document.addEventListener('DOMContentLoaded', () => {
               </table>
             </div>
           </div>
-
-          <button type="button" id="backToGameBtn" class="secondary-btn">Back to Game</button>
         </section>
       </main>
 
@@ -289,8 +345,12 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       </div>
     `;
-  }
 
+  // Setup game functionality
+  setupGameFunctionality();
+}
+
+function setupGameFunctionality() {
   console.log('Chhota Pandit app initialized with layout');
 
   // Log initial GameStore state
@@ -322,7 +382,66 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
-});
+
+  // Setup logout functionality
+  const logoutBtn = document.querySelector('#logoutBtn');
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', logout);
+  }
+}
+
+function setupLoginHandlers() {
+  const loginForm = document.querySelector('#loginForm');
+  const passwordInput = document.querySelector('#passwordInput');
+  const loginError = document.querySelector('#loginError');
+
+  // Handle form submission
+  loginForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const password = passwordInput.value.trim();
+    if (!password) return;
+
+    // Show loading state
+    const submitBtn = loginForm.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Checking...';
+    submitBtn.disabled = true;
+
+    try {
+      // Validate password
+      const isValid = await validatePassword(password);
+
+      if (isValid) {
+        // Success! Set authentication and reload the app
+        setAuthenticated(true);
+        const app = document.querySelector('#app');
+        initializeGameApp(app);
+      } else {
+        // Show error
+        loginError.classList.remove('hidden');
+        passwordInput.value = '';
+        passwordInput.focus();
+
+        // Hide error after 3 seconds
+        setTimeout(() => {
+          loginError.classList.add('hidden');
+        }, 3000);
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+      loginError.textContent = 'An error occurred. Please try again.';
+      loginError.classList.remove('hidden');
+    } finally {
+      // Restore button state
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    }
+  });
+
+  // Focus password input
+  passwordInput.focus();
+}
 
 function setupTeamManagement() {
   // Add player button functionality
@@ -479,24 +598,115 @@ function handleNextPlayer() {
     // Check if round is complete
     const newState = gameStore.getState();
     if (gameStore.isRoundComplete()) {
-      // Show round completion message or move to next round
-      alert(`Round ${newState.round} complete! All cards have been guessed.`);
+      // Round is complete
+      console.log(`Round ${newState.round} complete!`);
 
       if (newState.round < 3) {
-        // TODO: Move to next round or show scoreboard
-        alert('Round complete! Moving to next round...');
+        // Move to next round
+        const advanced = gameStore.nextRound();
+        if (advanced) {
+          const nextRoundState = gameStore.getState();
+          showRoundTransitionModal(nextRoundState.round);
+        }
       } else {
         // Game complete
-        alert('Game complete! Final scores...');
+        gameStore.tallyRound(); // Tally final round
+        showGameCompleteModal();
       }
     } else {
-      // Update the view to show the next player's pre-turn state
+      // Continue with next player in current round
       updateGameView();
     }
   } catch (error) {
     console.error('Error handling next player:', error);
     alert(error.message);
   }
+}
+
+function showRoundTransitionModal(roundNumber) {
+  const roundNames = {
+    1: 'Say Anything',
+    2: 'One Word Only',
+    3: 'Actions Only'
+  };
+
+  const roundDescriptions = {
+    1: 'Use any words or phrases to describe the card.',
+    2: 'You can only say ONE WORD per card. No gestures, sounds, or additional words!',
+    3: 'No words allowed! Use only gestures and actions to act out the card.'
+  };
+
+  showModal(
+    `Round ${roundNumber}: ${roundNames[roundNumber]}`,
+    `${roundDescriptions[roundNumber]}\n\nAll cards are back in play. Ready to start Round ${roundNumber}?`,
+    'Start Round',
+    () => {
+      updateGameView();
+    }
+  );
+}
+
+function showGameCompleteModal() {
+  const state = gameStore.getState();
+
+  // Calculate final scores
+  const team1Total = state.teamScores[0].reduce((sum, score) => sum + (score || 0), 0);
+  const team2Total = state.teamScores[1].reduce((sum, score) => sum + (score || 0), 0);
+
+  const winner = team1Total > team2Total ? state.teams[0].name :
+                 team2Total > team1Total ? state.teams[1].name : 'Tie';
+
+  const message = winner === 'Tie' ?
+    `Game Complete!\n\nIt's a tie! Both teams scored ${team1Total} points.` :
+    `Game Complete!\n\n${winner} wins with ${Math.max(team1Total, team2Total)} points!`;
+
+  showModal(
+    'Game Complete!',
+    message,
+    'View Final Scores',
+    () => {
+      // Switch to score view
+      document.querySelector('#gameView').classList.add('hidden');
+      document.querySelector('#scoreView').classList.remove('hidden');
+      updateScoreView();
+    }
+  );
+}
+
+function showModal(title, message, buttonText, onConfirm) {
+  // Create modal backdrop
+  const backdrop = document.createElement('div');
+  backdrop.className = 'modal-backdrop';
+
+  // Create modal content
+  const modal = document.createElement('div');
+  modal.className = 'modal-content';
+
+  modal.innerHTML = `
+    <h3>${title}</h3>
+    <p>${message}</p>
+    <div class="modal-actions">
+      <button class="primary-btn modal-confirm-btn">${buttonText}</button>
+    </div>
+  `;
+
+  backdrop.appendChild(modal);
+  document.body.appendChild(backdrop);
+
+  // Handle confirm button
+  const confirmBtn = modal.querySelector('.modal-confirm-btn');
+  confirmBtn.addEventListener('click', () => {
+    document.body.removeChild(backdrop);
+    if (onConfirm) onConfirm();
+  });
+
+  // Close on backdrop click
+  backdrop.addEventListener('click', (e) => {
+    if (e.target === backdrop) {
+      document.body.removeChild(backdrop);
+      if (onConfirm) onConfirm();
+    }
+  });
 }
 
 function handleTimerExpired() {
@@ -689,6 +899,17 @@ function updateGameView() {
     currentRoundEl.textContent = state.round;
   }
 
+  // Update round hints
+  const roundHintsEl = document.querySelector('#roundHints');
+  if (roundHintsEl) {
+    const roundHints = {
+      1: '<strong>Say Anything:</strong> Use any words or phrases to describe the card.',
+      2: '<strong>One Word Only:</strong> You can only say ONE WORD per card. No gestures!',
+      3: '<strong>Actions Only:</strong> No words allowed! Use only gestures and actions.'
+    };
+    roundHintsEl.innerHTML = roundHints[state.round] || roundHints[1];
+  }
+
   // Update current player info
   const currentPlayerName = state.playerOrder[state.currentPlayerIndex];
   const currentTeam = gameStore.getTeamForPlayer(currentPlayerName);
@@ -876,20 +1097,83 @@ function updateLiveScoreboard() {
   liveScores.innerHTML = scoresHTML;
 }
 
+function updateScoreView() {
+  const state = gameStore.getState();
+
+  // Update round scores table
+  const roundScoresTable = document.querySelector('#roundScoresTable tbody');
+  if (roundScoresTable && state.teams.length > 0) {
+    const roundScoresHTML = state.teams.map((team, teamIndex) => {
+      const teamScores = state.teamScores[teamIndex] || [];
+      return `
+        <tr>
+          <td>${team.name}</td>
+          <td>${teamScores[0] || '-'}</td>
+          <td>${teamScores[1] || '-'}</td>
+          <td>${teamScores[2] || '-'}</td>
+        </tr>
+      `;
+    }).join('');
+
+    roundScoresTable.innerHTML = roundScoresHTML;
+  }
+
+  // Update total scores table
+  const totalScoresTable = document.querySelector('#totalScoresTable tbody');
+  if (totalScoresTable && state.teams.length > 0) {
+    const totalScoresHTML = state.teams.map((team, teamIndex) => {
+      const teamScores = state.teamScores[teamIndex] || [];
+      const totalScore = teamScores.reduce((sum, score) => sum + (score || 0), 0);
+      return `
+        <tr>
+          <td>${team.name}</td>
+          <td>${totalScore}</td>
+        </tr>
+      `;
+    }).join('');
+
+    totalScoresTable.innerHTML = totalScoresHTML;
+  }
+}
+
 function populateCategories() {
-  const categorySelect = document.querySelector('#categorySelect');
-  if (categorySelect) {
+  const categoryTiles = document.querySelector('#categoryTiles');
+  if (categoryTiles) {
     const categories = getCategories();
 
-    // Clear existing options
-    categorySelect.innerHTML = '';
+    // Clear existing content
+    categoryTiles.innerHTML = '';
 
-    // Add category options
+    // Category icons mapping
+    const categoryIcons = {
+      'Bollywood': '🎬',
+      'Sports': '⚽',
+      'Movies': '🍿',
+      'Music': '🎵',
+      'History': '📚',
+      'Science': '🔬',
+      'Technology': '💻',
+      'Food': '🍽️',
+      'Travel': '✈️',
+      'Art': '🎨'
+    };
+
+    // Add category tiles
     categories.forEach(category => {
-      const option = document.createElement('option');
-      option.value = category;
-      option.textContent = category;
-      categorySelect.appendChild(option);
+      const tile = document.createElement('div');
+      tile.className = 'category-tile';
+      tile.dataset.category = category;
+      tile.innerHTML = `
+        <div class="category-icon">${categoryIcons[category] || '�'}</div>
+        <div class="category-name">${category}</div>
+      `;
+
+      // Add click handler for selection
+      tile.addEventListener('click', () => {
+        tile.classList.toggle('selected');
+      });
+
+      categoryTiles.appendChild(tile);
     });
 
     console.log('Categories populated:', categories);
@@ -897,10 +1181,11 @@ function populateCategories() {
 }
 
 function getSelectedCategories() {
-  const categorySelect = document.querySelector('#categorySelect');
-  if (!categorySelect) return [];
+  const categoryTiles = document.querySelector('#categoryTiles');
+  if (!categoryTiles) return [];
 
-  return Array.from(categorySelect.selectedOptions).map(option => option.value);
+  const selectedTiles = categoryTiles.querySelectorAll('.category-tile.selected');
+  return Array.from(selectedTiles).map(tile => tile.dataset.category);
 }
 
 // Card Selection Functions
@@ -1083,13 +1368,14 @@ function handleQuickTest() {
     team2Players[2].value = 'P6';
   }
 
-  // Select all categories from the select element
-  const categorySelect = document.querySelector('#categorySelect');
-  if (categorySelect) {
-    // Select all options
-    for (let i = 0; i < categorySelect.options.length; i++) {
-      categorySelect.options[i].selected = true;
-    }
+  // Select all categories from the tile system
+  const categoryTiles = document.querySelector('#categoryTiles');
+  if (categoryTiles) {
+    // Select all category tiles
+    const allTiles = categoryTiles.querySelectorAll('.category-tile');
+    allTiles.forEach(tile => {
+      tile.classList.add('selected');
+    });
   }
 
   // Get selected categories

@@ -394,7 +394,7 @@ class GameStore {
     }
 
     this.state.round = roundNumber;
-    this.state.currentPlayerIndex = 0;
+    // DO NOT reset currentPlayerIndex - maintain turn order across rounds
     this.state.turnActive = false;
     this.state.currentCard = null;
 
@@ -461,6 +461,7 @@ class GameStore {
     const currentTeam = this.getTeamForPlayer(currentPlayer);
 
     const turnResult = {
+      player: currentPlayer,
       teamId: currentTeam.id,
       round: this.state.round,
       guessedCardIds: this.state.turnGuessedCards.map(card => card.id),
@@ -713,8 +714,76 @@ class GameStore {
    * Tally scores for the current round
    */
   tallyRound() {
-    // Implementation placeholder
-    console.log('GameStore.tallyRound called');
+    // Calculate round scores from turn history
+    const roundScores = [0, 0]; // [team1, team2]
+
+    // Get all turns for the current round
+    const currentRoundTurns = this.state.history.filter(turn => turn.round === this.state.round);
+
+    for (const turn of currentRoundTurns) {
+      const player = turn.player;
+      const team = this.getTeamForPlayer(player);
+
+      if (!team) {
+        console.warn(`Could not find team for player: ${player}`);
+        continue;
+      }
+
+      const teamIndex = this.state.teams.findIndex(t => t.id === team.id);
+
+      if (teamIndex === -1) {
+        console.warn(`Could not find team index for team: ${team.id}`);
+        continue;
+      }
+
+      // Calculate points for guessed cards in this turn
+      const turnPoints = turn.guessedCardIds.reduce((sum, cardId) => {
+        const card = this.state.deck.find(c => c.id === cardId);
+        return sum + (card ? card.points : 0);
+      }, 0);
+
+      roundScores[teamIndex] += turnPoints;
+    }
+
+    // Update team scores for this round
+    this.state.teams.forEach((team, index) => {
+      if (!this.state.teamScores[index]) {
+        this.state.teamScores[index] = [];
+      }
+      this.state.teamScores[index][this.state.round - 1] = roundScores[index];
+    });
+
+    console.log(`Round ${this.state.round} tallied - Team scores: ${roundScores.join(', ')}`);
+    this.notifyListeners();
+  }
+
+  /**
+   * Advance to the next round
+   * @returns {boolean} True if successfully advanced, false if game is complete
+   */
+  nextRound() {
+    if (this.state.round >= 3) {
+      console.log('Game complete - all rounds finished');
+      return false;
+    }
+
+    // Tally current round scores
+    this.tallyRound();
+
+    // Clear turn state
+    this.state.turnGuessedCards = [];
+    this.state.turnSkippedCards = [];
+    this.state.turnActive = false;
+    this.state.currentCard = null;
+
+    // Reset guessedOnce for next round (Round 2 and 3 don't require all cards to be guessed)
+    this.state.guessedOnce.clear();
+
+    // Start next round
+    this.startRound(this.state.round + 1);
+
+    console.log(`Advanced to Round ${this.state.round}`);
+    return true;
   }
 
   /**
