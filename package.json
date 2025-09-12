@@ -3,22 +3,25 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "homepage": "https://rehan141196.github.io/ChhotaPandit/",
     "scripts": {
-      "dev": "vite",
-      "build": "vite build",
-      "preview": "vite preview",
-      "test": "vitest",
-      "lint": "eslint .",
-      "format": "prettier --write ."
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "test": "vitest",
+        "lint": "eslint .",
+        "format": "prettier --write .",
+        "predeploy" : "npm run build",
+        "deploy" : "gh-pages -d dist"
     },
     "devDependencies": {
-      "@eslint/js": "^9.34.0",
-      "@testing-library/dom": "^10.4.1",
-      "eslint": "^9.34.0",
-      "jsdom": "^26.1.0",
-      "prettier": "^3.6.2",
-      "vite": "^6.3.5",
-      "vitest": "^3.2.4"
+        "@eslint/js": "^9.34.0",
+        "@testing-library/dom": "^10.4.1",
+        "eslint": "^9.34.0",
+        "gh-pages": "^6.3.0",
+        "jsdom": "^26.1.0",
+        "prettier": "^3.6.2",
+        "vite": "^6.3.5",
+        "vitest": "^3.2.4"
     }
-  }
-  
+}
