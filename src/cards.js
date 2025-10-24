@@ -113,7 +113,7 @@ export const CARDS = [
   { id: 'sp054', title: 'See you at the Gabba Mate', category: 'Sports', points: 4, hints: 'Tim Paine Rishabh Pant sledge' },
   { id: 'sp055', title: 'Natwest Series 2007', category: 'Sports', points: 2, hints: 'Cricket tournament England' },
   { id: 'sp056', title: 'Suryakumar Yadav', category: 'Sports', points: 2, hints: 'Cricket batsman Mumbai Indians' },
-  { id: 'sp057', title: 'Jay Shah', category: 'Sports', points: 3, hints: 'Cricket administrator BCCI' }
+  { id: 'sp057', title: 'Jay Shah', category: 'Sports', points: 3, hints: 'Cricket administrator BCCI' },
 
   // Historical Figures (30 cards)
   { id: 'hf001', title: 'Mahatma Gandhi', category: 'Historical', points: 1, hints: 'Non-violence independence father' },
