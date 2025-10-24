@@ -107,6 +107,13 @@ export const CARDS = [
   { id: 'sp048', title: 'Dutee Chand', category: 'Sports', points: 3, hints: 'Athletics sprint 100m 200m' },
   { id: 'sp049', title: 'Anju Bobby George', category: 'Sports', points: 4, hints: 'Athletics long jump world bronze' },
   { id: 'sp050', title: 'PT Usha', category: 'Sports', points: 3, hints: 'Athletics sprint hurdles queen' },
+  { id: 'sp051', title: 'BSNL Chauka', category: 'Sports', points: 4, hints: 'Cricket commentary catchphrase' },
+  { id: 'sp052', title: 'Gilli Danda', category: 'Sports', points: 3, hints: 'Traditional Indian sport stick' },
+  { id: 'sp053', title: 'Mumbai Indians', category: 'Sports', points: 1, hints: 'IPL cricket team Rohit' },
+  { id: 'sp054', title: 'See you at the Gabba Mate', category: 'Sports', points: 4, hints: 'Tim Paine Rishabh Pant sledge' },
+  { id: 'sp055', title: 'Natwest Series 2007', category: 'Sports', points: 2, hints: 'Cricket tournament England' },
+  { id: 'sp056', title: 'Suryakumar Yadav', category: 'Sports', points: 2, hints: 'Cricket batsman Mumbai Indians' },
+  { id: 'sp057', title: 'Jay Shah', category: 'Sports', points: 3, hints: 'Cricket administrator BCCI' }
 
   // Historical Figures (30 cards)
   { id: 'hf001', title: 'Mahatma Gandhi', category: 'Historical', points: 1, hints: 'Non-violence independence father' },
@@ -171,6 +178,12 @@ export const CARDS = [
   { id: 'fd028', title: 'Kozhukattai', category: 'Food', points: 4, hints: 'Rice flour dumplings Tamil' },
   { id: 'fd029', title: 'Mysore Pak', category: 'Food', points: 3, hints: 'Ghee sweet Karnataka' },
   { id: 'fd030', title: 'Rasgulla', category: 'Food', points: 2, hints: 'Spongy white sweet Bengali' },
+  { id: 'fd031', title: '5 Star', category: 'Food', points: 3, hints: 'Chocolate bar Cadbury' },
+  { id: 'fd032', title: 'Mattar Paneer', category: 'Food', points: 2, hints: 'Peas cottage cheese curry' },
+  { id: 'fd033', title: 'Golgappe', category: 'Food', points: 3, hints: 'Street food crispy water' },
+  { id: 'fd034', title: 'Bisi Belle Bhaat', category: 'Food', points: 4, hints: 'Karnataka rice lentil dish' },
+  { id: 'fd035', title: 'Mango Bite', category: 'Food', points: 2, hints: 'Mango flavored candy' },
+  { id: 'fd036', title: 'Paan ki Pichkaari', category: 'Food', points: 2, hints: 'Betel leaf water spray' },
 
   // TV Shows (30 cards)
   { id: 'tv001', title: 'Kyunki Saas Bhi Kabhi Bahu Thi', category: 'TV Shows', points: 2, hints: 'Ekta Kapoor family drama' },
@@ -224,7 +237,60 @@ export const CARDS = [
   { id: 'ft017', title: 'Hornbill Festival', category: 'Festivals', points: 4, hints: 'Nagaland tribal culture December' },
   { id: 'ft018', title: 'Thrissur Pooram', category: 'Festivals', points: 4, hints: 'Kerala temple elephant procession' },
   { id: 'ft019', title: 'Kumbh Fair', category: 'Festivals', points: 3, hints: 'Rajasthan desert festival camel' },
-  { id: 'ft020', title: 'Bihu', category: 'Festivals', points: 3, hints: 'Assamese new year spring harvest' }
+  { id: 'ft020', title: 'Bihu', category: 'Festivals', points: 3, hints: 'Assamese new year spring harvest' },
+
+  // Iconic Ads (20 cards)
+  { id: 'ad001', title: 'Nirma', category: 'Iconic Ads', points: 2, hints: 'Washing powder detergent jingle' },
+  { id: 'ad002', title: 'Ramesh Suresh', category: 'Iconic Ads', points: 4, hints: 'Fevicol adhesive brothers' },
+  { id: 'ad003', title: 'Santoor', category: 'Iconic Ads', points: 4, hints: 'Soap brand mother daughter' },
+  { id: 'ad004', title: 'Vicco Turmeric', category: 'Iconic Ads', points: 3, hints: 'Ayurvedic cream turmeric' },
+  { id: 'ad005', title: 'Ambuja Cement', category: 'Iconic Ads', points: 3, hints: 'Cement brand construction' },
+  { id: 'ad006', title: 'Vasmol', category: 'Iconic Ads', points: 2, hints: 'Hair oil brand grooming' },
+  { id: 'ad007', title: 'Tide', category: 'Iconic Ads', points: 1, hints: 'Detergent brand washing' },
+  { id: 'ad008', title: 'Feviquick', category: 'Iconic Ads', points: 2, hints: 'Adhesive glue instant' },
+  { id: 'ad009', title: 'Daag Ache Hai', category: 'Iconic Ads', points: 2, hints: 'Ariel detergent stain removal' },
+  { id: 'ad010', title: 'Dil Maange More', category: 'Iconic Ads', points: 3, hints: 'Pepsi cola brand slogan' },
+  { id: 'ad011', title: 'Kaisi jeeb laplapaayi', category: 'Iconic Ads', points: 2, hints: 'Cadbury chocolate tongue' },
+  { id: 'ad012', title: 'MRF ZLX', category: 'Iconic Ads', points: 2, hints: 'Tyre brand cricket sponsorship' },
+  { id: 'ad013', title: 'Humara Bajaj', category: 'Iconic Ads', points: 4, hints: 'Bajaj scooter family transport' },
+
+  // Misc (10 cards)
+  { id: 'ms001', title: 'Danish Cookie Box', category: 'Misc', points: 3, hints: 'Tin box storage container' },
+  { id: 'ms002', title: 'Aakashvaani', category: 'Misc', points: 2, hints: 'All India Radio broadcasting' },
+  { id: 'ms003', title: 'Bhidu', category: 'Misc', points: 2, hints: 'Mumbai slang brother friend' },
+  { id: 'ms004', title: 'Chomu', category: 'Misc', points: 3, hints: 'Slang term foolish person' },
+  { id: 'ms005', title: 'Tube light', category: 'Misc', points: 2, hints: 'Fluorescent lighting bulb' },
+  { id: 'ms006', title: 'Marine Drive', category: 'Misc', points: 3, hints: 'Mumbai coastline Queen Necklace' },
+
+  // Additional Bollywood cards (need to be checked)
+  { id: 'bw051', title: 'Chhota Pandit', category: 'Bollywood', points: 4, hints: 'Character comedy film' },
+  { id: 'bw052', title: 'Uday Bhai', category: 'Bollywood', points: 2, hints: 'Character comedy film' },
+  { id: 'bw053', title: 'Majnu Bhai', category: 'Bollywood', points: 2, hints: 'Character comedy film' },
+  { id: 'bw054', title: 'Golmaal', category: 'Bollywood', points: 2, hints: 'Rohit Shetty comedy franchise' },
+  { id: 'bw055', title: 'Tusshar Kapoor', category: 'Bollywood', points: 2, hints: 'Actor comedy roles' },
+  { id: 'bw056', title: 'Hera Pheri', category: 'Bollywood', points: 1, hints: 'Comedy film Akshay Paresh' },
+  { id: 'bw057', title: 'DK Malik', category: 'Bollywood', points: 4, hints: 'Character comedy film' },
+  { id: 'bw058', title: 'Phir Hera Pheri', category: 'Bollywood', points: 1, hints: 'Comedy sequel Akshay Paresh' },
+  { id: 'bw059', title: 'Rinkiya Ke Paapa', category: 'Bollywood', points: 4, hints: 'Character comedy film' },
+  { id: 'bw060', title: 'PK', category: 'Bollywood', points: 1, hints: 'Aamir Khan alien comedy' },
+  { id: 'bw061', title: 'Kahaani Ghar Ghar Ki', category: 'Bollywood', points: 2, hints: 'TV serial family drama' },
+  { id: 'bw062', title: 'Kasauti Zindagi Ki', category: 'Bollywood', points: 2, hints: 'TV serial family drama' },
+  { id: 'bw063', title: 'Salman Bhai', category: 'Bollywood', points: 2, hints: 'Actor nickname Bollywood' },
+  { id: 'bw064', title: 'Himesh Reshamiaya', category: 'Bollywood', points: 1, hints: 'Singer actor music director' },
+  { id: 'bw065', title: 'Chamach Ek Cheeni Do Baar', category: 'Bollywood', points: 3, hints: 'Character comedy film' },
+  { id: 'bw066', title: 'Coolie No. 1', category: 'Bollywood', points: 2, hints: 'Govinda comedy film' },
+  { id: 'bw067', title: 'Geet', category: 'Bollywood', points: 3, hints: 'Character comedy film' },
+  { id: 'bw068', title: 'Bhool Bhulaiyya', category: 'Bollywood', points: 1, hints: 'Akshay Kumar horror comedy' },
+  { id: 'bw069', title: 'Maaro Deekro', category: 'Bollywood', points: 4, hints: 'Character comedy film' },
+  { id: 'bw070', title: 'Raghunandandas Govardhandas Vakavle', category: 'Bollywood', points: 3, hints: 'Character comedy film' },
+  { id: 'bw071', title: 'Deja Chu', category: 'Bollywood', points: 4, hints: 'Character comedy film' },
+  { id: 'bw072', title: 'Soni De Nakhre', category: 'Bollywood', points: 3, hints: 'Character comedy film' },
+  { id: 'bw073', title: 'Ganpat', category: 'Bollywood', points: 2, hints: 'Character comedy film' },
+  { id: 'bw074', title: 'Majnu Bhai Ki Painting', category: 'Bollywood', points: 2, hints: 'Character comedy film' },
+  { id: 'bw075', title: 'Kuch Toh Gadbad Hai', category: 'Bollywood', points: 2, hints: 'Character comedy film' },
+  { id: 'bw076', title: 'Daya Darwaaza Tod Do', category: 'Bollywood', points: 2, hints: 'Character comedy film' },
+  { id: 'bw077', title: 'Jethalal Champaklal Gada', category: 'Bollywood', points: 1, hints: 'Taarak Mehta character' },
+  { id: 'bw078', title: 'Kyun Thak Rahe Ho', category: 'Bollywood', points: 2, hints: 'Character comedy film' }
 ];
 
 /**
