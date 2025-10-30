@@ -421,125 +421,90 @@
   },
   {
     "id": "bw061",
-    "title": "Kahaani Ghar Ghar Ki",
-    "category": "Bollywood",
-    "points": 2,
-    "hints": "An Ekta Kapoor saas-bahu staple"
-  },
-  {
-    "id": "bw062",
-    "title": "Kasauti Zindagi Ki",
-    "category": "Bollywood",
-    "points": 2,
-    "hints": "Anurag and Prerna's star crossed saga with Komolika's iconic entries and exits"
-  },
-  {
-    "id": "bw063",
     "title": "Salman Bhai",
     "category": "Bollywood",
     "points": 2,
     "hints": "Endearing term for an actor known for his Eid releases and iconic dance steps"
   },
   {
-    "id": "bw064",
+    "id": "bw062",
     "title": "Himesh Reshamiaya",
     "category": "Bollywood",
     "points": 1,
     "hints": "Cap and mike hitmaker of 2000s hooks with nasal charm"
   },
   {
-    "id": "bw065",
+    "id": "bw063",
     "title": "Chamach Ek Cheeni Do Baar",
     "category": "Bollywood",
     "points": 4,
     "hints": "Raghu's dialogue from All The Best when asked how we likes his tea"
   },
   {
-    "id": "bw066",
+    "id": "bw064",
     "title": "Coolie No. 1",
     "category": "Bollywood",
     "points": 2,
     "hints": "A porter turned prince in a matchmaking farce of swapped identities and songs"
   },
   {
-    "id": "bw067",
+    "id": "bw065",
     "title": "Geet",
     "category": "Bollywood",
     "points": 3,
     "hints": "A bubbly traveler who declares \"Main apni favourite hoon\" on a life rerouting journey"
   },
   {
-    "id": "bw068",
+    "id": "bw066",
     "title": "Bhool Bhulaiyya",
     "category": "Bollywood",
     "points": 1,
     "hints": "A haunted haveli, Manjulika's legend and a comical exorcism squad"
   },
   {
-    "id": "bw069",
+    "id": "bw067",
     "title": "Maaro Deekro",
     "category": "Bollywood",
     "points": 4,
     "hints": "Endearing name for the vintage car in Dhamaal"
   },
   {
-    "id": "bw070",
+    "id": "bw068",
     "title": "Raghunandandas Govardhandas Vakavle",
     "category": "Bollywood",
     "points": 3,
     "hints": "Sanjay Mishra's character in All The Best"
   },
   {
-    "id": "bw071",
+    "id": "bw069",
     "title": "Deja Chu",
     "category": "Bollywood",
     "points": 4,
     "hints": "Fukrey reference when Choocha can see the future"
   },
   {
-    "id": "bw072",
+    "id": "bw070",
     "title": "Soni De Nakhre",
     "category": "Bollywood",
     "points": 3,
     "hints": "A peppy party track from Partner"
   },
   {
-    "id": "bw073",
+    "id": "bw071",
     "title": "Ganpat",
     "category": "Bollywood",
     "points": 4,
     "hints": "A raucous bar banger calling the bartender by name"
   },
   {
-    "id": "bw074",
+    "id": "bw072",
     "title": "Majnu Bhai Ki Painting",
     "category": "Bollywood",
     "points": 2,
     "hints": "Welcome don's modern art, donkey on a horse image"
   },
   {
-    "id": "bw075",
-    "title": "Kuch Toh Gadbad Hai",
-    "category": "Bollywood",
-    "points": 2,
-    "hints": "ACP Pradyuman's classic line from CID"
-  },
-  {
-    "id": "bw076",
-    "title": "Daya Darwaaza Tod Do",
-    "category": "Bollywood",
-    "points": 2,
-    "hints": "ACP Pradyuman's order to his strongest cop"
-  },
-  {
-    "id": "bw077",
-    "title": "Jethalal Champaklal Gada",
-    "category": "Bollywood",
-    "points": 2,
-    "hints": "Gada Electronics' harried owner from Gokuldham, forever in society trouble"
-  },
-  {
-    "id": "bw078",
+    "id": "bw073",
     "title": "Kyun Thak Rahe Ho",
     "category": "Bollywood",
     "points": 3,
@@ -819,214 +784,235 @@
     "hints": "Former head of the BCCI and son of an Indian politician"
   },
   {
+    "id": "sp040",
+    "title": "Wankhede",
+    "category": "Sports",
+    "points": 2,
+    "hints": "Cricket stadium in Mumbai"
+  },
+  {
+    "id": "sp041",
+    "title": "Eden Gardens",
+    "category": "Sports",
+    "points": 2,
+    "hints": "Cricket stadium in Kolkata"
+  },
+  {
+    "id": "sp042",
+    "title": "Milkha Singh",
+    "category": "Sports",
+    "points": 2,
+    "hints": "Indian sprinter with a Bollywood biopic"
+  },
+  {
     "id": "hf001",
     "title": "Mahatma Gandhi",
     "category": "Historical",
     "points": 1,
-    "hints": "Father of the Nation."
+    "hints": "Father of the Nation"
   },
   {
     "id": "hf002",
     "title": "Subhas Chandra Bose",
     "category": "Historical",
     "points": 2,
-    "hints": "A firebrand who rallied a nation to fight for freedom."
+    "hints": "A firebrand who rallied a nation to fight for freedom"
   },
   {
     "id": "hf003",
     "title": "Jawaharlal Nehru",
     "category": "Historical",
     "points": 2,
-    "hints": "The first Prime Minister who shaped a young republic."
+    "hints": "The first Prime Minister who shaped a young republic"
   },
   {
     "id": "hf004",
     "title": "Sardar Patel",
     "category": "Historical",
-    "points": 2,
-    "hints": "The Iron Man who unified a patchwork of states."
+    "points": 3,
+    "hints": "The Iron Man from Gujarat who unified a patchwork of states."
   },
   {
     "id": "hf005",
     "title": "Dr. APJ Abdul Kalam",
     "category": "Historical",
     "points": 2,
-    "hints": "A scientist‑president who inspired with simplicity."
+    "hints": "A scientist president who inspired with simplicity."
   },
   {
     "id": "hf006",
     "title": "Chandragupta Maurya",
     "category": "Historical",
-    "points": 3,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 4,
+    "hints": "Founder of an empire in Magadha"
   },
   {
     "id": "hf007",
     "title": "Ashoka the Great",
     "category": "Historical",
-    "points": 2,
-    "hints": "An emperor who turned conquest into compassion."
+    "points": 3,
+    "hints": "An emperor who turned conquest into compassion"
   },
   {
     "id": "hf008",
     "title": "Akbar",
     "category": "Historical",
     "points": 2,
-    "hints": "A Mughal ruler famed for statecraft and tolerance."
+    "hints": "A Mughal ruler famed for statecraft and tolerance"
   },
   {
     "id": "hf009",
     "title": "Shivaji Maharaj",
     "category": "Historical",
-    "points": 2,
-    "hints": "A Maratha founder famed for daring and forts."
+    "points": 3,
+    "hints": "A Maratha founder famed for daring and forts"
   },
   {
     "id": "hf010",
     "title": "Rani Lakshmibai",
     "category": "Historical",
     "points": 2,
-    "hints": "The warrior queen who led from the saddle."
+    "hints": "The warrior queen who rebelled against the British"
   },
   {
     "id": "hf011",
     "title": "Tipu Sultan",
     "category": "Historical",
     "points": 3,
-    "hints": "The Tiger of Mysore who defied empire."
+    "hints": "The Tiger of Mysore who defied empire"
   },
   {
     "id": "hf012",
     "title": "Maharana Pratap",
     "category": "Historical",
-    "points": 3,
-    "hints": "A Rajput icon of valor and resolve."
+    "points": 4,
+    "hints": "A Rajput icon of valor and resolve"
   },
   {
     "id": "hf013",
-    "title": "Prithviraj Chauhan",
+    "title": "Red Fort",
     "category": "Historical",
-    "points": 3,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 1,
+    "hints": "Mughal fort in Delhi built by Shah Jahan"
   },
   {
     "id": "hf014",
     "title": "Aryabhata",
     "category": "Historical",
-    "points": 4,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 3,
+    "hints": "Inventor of the zero"
   },
   {
     "id": "hf015",
     "title": "Chandrashekhar Azad",
     "category": "Historical",
-    "points": 3,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 4,
+    "hints": "Freedom who created the Hindustan Socialist Republican Association"
   },
   {
     "id": "hf016",
     "title": "Bhagat Singh",
     "category": "Historical",
-    "points": 2,
-    "hints": "A revolutionary whose sacrifice galvanized the struggle."
+    "points": 4,
+    "hints": "Freedom fighter from Punjab who sacrificed his life"
   },
   {
     "id": "hf017",
     "title": "Rani Padmavati",
     "category": "Historical",
-    "points": 3,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 4,
+    "hints": "The queen consort of Mewar known for her beauty"
   },
   {
     "id": "hf018",
     "title": "Swami Vivekananda",
     "category": "Historical",
-    "points": 3,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 4,
+    "hints": "Hindu monk and philosopher who was key in introducing Yoga to the Western world"
   },
   {
     "id": "hf019",
     "title": "Raja Ram Mohan Roy",
     "category": "Historical",
     "points": 4,
-    "hints": "A reformer who challenged old chains."
+    "hints": "The Father of the Indian Renaissance and founder of the Brahmo Samaj"
   },
   {
     "id": "hf020",
     "title": "Sarojini Naidu",
     "category": "Historical",
-    "points": 3,
-    "hints": "The Nightingale whose words stirred crowds."
+    "points": 2,
+    "hints": "The Nightingale whose words stirred crowds"
   },
   {
     "id": "hf021",
     "title": "Bal Gangadhar Tilak",
     "category": "Historical",
-    "points": 3,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 4,
+    "hints": "Indian nationalist and strongest advocate of Swaraj"
   },
   {
     "id": "hf022",
     "title": "Lala Lajpat Rai",
     "category": "Historical",
-    "points": 3,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 4,
+    "hints": "Revolutionary known as the Lion of Punjab who lost his life protesting against the Simon Commission"
   },
   {
     "id": "hf023",
     "title": "Gopal Krishna Gokhale",
     "category": "Historical",
     "points": 4,
-    "hints": "A key figure whose legacy still shapes public life."
+    "hints": "Senior leader of the Indian National Congress and the founder of the Servants of India Society"
   },
   {
     "id": "hf024",
-    "title": "Maulana Abul Kalam Azad",
+    "title": "Taj Mahal",
     "category": "Historical",
-    "points": 3,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 1,
+    "hints": "Tomb built by Shah Jahan"
   },
   {
     "id": "hf025",
     "title": "Khan Abdul Ghaffar Khan",
     "category": "Historical",
     "points": 4,
-    "hints": "A key figure whose legacy still shapes public life."
+    "hints": "Anti-colonial activist known as the Frontier Gandhi"
   },
   {
     "id": "hf026",
     "title": "Mangal Pandey",
     "category": "Historical",
     "points": 3,
-    "hints": "A key figure whose legacy still shapes public life."
+    "hints": "Sepoy in the Bengal army who played a key role in the Revolt of 1857"
   },
   {
     "id": "hf027",
-    "title": "Tatya Tope",
+    "title": "Indira Gandhi",
     "category": "Historical",
-    "points": 4,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 2,
+    "hints": "Prime Minister of India who delcared the Emergency"
   },
   {
     "id": "hf028",
-    "title": "Nana Saheb",
+    "title": "First Battle of Panipat",
     "category": "Historical",
-    "points": 4,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 3,
+    "hints": "War between Babur and Ibrahim Lodi that established Mughal rule in India"
   },
   {
     "id": "hf029",
-    "title": "Begum Hazrat Mahal",
+    "title": "Grand Trunk Road",
     "category": "Historical",
-    "points": 4,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 3,
+    "hints": "Road built by Sher Shah Suri connecting many cities in South Asia"
   },
   {
     "id": "hf030",
-    "title": "Kunwar Singh",
+    "title": "Gateway of India",
     "category": "Historical",
-    "points": 4,
-    "hints": "A key figure whose legacy still shapes public life."
+    "points": 1,
+    "hints": "Monument built to commemorate the 1911 visit of King George V and Queen Mary"
   },
   {
     "id": "fd001",
@@ -1039,463 +1025,435 @@
     "id": "fd002",
     "title": "Butter Chicken",
     "category": "Food",
-    "points": 2,
-    "hints": "A creamy tomato‑based curry best mopped with bread."
+    "points": 1,
+    "hints": "A creamy tomato-based curry best eaten with naan"
   },
   {
     "id": "fd003",
     "title": "Masala Dosa",
     "category": "Food",
     "points": 2,
-    "hints": "A fermented rice‑lentil crepe that’s crisp and lacy."
+    "hints": "A fermented rice lentil crepe that's crisp and spicy"
   },
   {
     "id": "fd004",
     "title": "Chole Bhature",
     "category": "Food",
-    "points": 2,
-    "hints": "A hearty, home‑style curry that tastes like comfort."
+    "points": 1,
+    "hints": "A hearty, home-style chickpea curry"
   },
   {
     "id": "fd005",
     "title": "Rajma Chawal",
     "category": "Food",
-    "points": 2,
-    "hints": "A comforting rice preparation cooked with spices and veg."
+    "points": 1,
+    "hints": "Rice and bean preparation staple in North India"
   },
   {
     "id": "fd006",
     "title": "Pani Puri",
     "category": "Food",
     "points": 1,
-    "hints": "Puffed shells bursting with tangy, spicy water."
+    "hints": "Street food called by different names around India"
   },
   {
     "id": "fd007",
     "title": "Vada Pav",
     "category": "Food",
-    "points": 2,
-    "hints": "A spiced potato patty tucked into a buttery bun."
+    "points": 1,
+    "hints": "Mumbai spiced potato patty tucked into a buttery bun"
   },
   {
     "id": "fd008",
     "title": "Samosa",
     "category": "Food",
     "points": 1,
-    "hints": "A crisp pastry triangle stuffed with spiced potatoes."
+    "hints": "A crisp pastry triangle stuffed with spiced potatoes"
   },
   {
     "id": "fd009",
     "title": "Tandoori Chicken",
     "category": "Food",
     "points": 2,
-    "hints": "Marinated pieces cooked till charred and tender."
+    "hints": "Marinated pieces cooked till charred and tender"
   },
   {
     "id": "fd010",
     "title": "Palak Paneer",
     "category": "Food",
-    "points": 3,
-    "hints": "Silky cottage cheese simmered in a rich, spiced gravy."
+    "points": 1,
+    "hints": "Silky cottage cheese simmered in a rich, spiced gravy"
   },
   {
     "id": "fd011",
     "title": "Gulab Jamun",
     "category": "Food",
     "points": 2,
-    "hints": "Fried milk solids that melt into rose‑scented syrup."
+    "hints": "Fried milk solids that melt into rose scented syrup."
   },
   {
     "id": "fd012",
     "title": "Jalebi",
     "category": "Food",
     "points": 2,
-    "hints": "A deep‑fried spiral soaked in sunny syrup."
+    "hints": "A deep fried spiral soaked in sugar syrup"
   },
   {
     "id": "fd013",
     "title": "Lassi",
     "category": "Food",
     "points": 2,
-    "hints": "A refreshing sip that cools the heat and lifts the mood."
+    "hints": "A refreshing milk drink that cools the heat and lifts the mood"
   },
   {
     "id": "fd014",
     "title": "Kheer",
     "category": "Food",
     "points": 2,
-    "hints": "A festival sweet that sticks to smiles."
+    "hints": "A festival sweet made from rice"
   },
   {
     "id": "fd015",
     "title": "Dhokla",
     "category": "Food",
-    "points": 3,
-    "hints": "A beloved dish you’ll find argued over with love."
+    "points": 2,
+    "hints": "Gujarati snack that looks like a sponge"
   },
   {
     "id": "fd016",
     "title": "Idli Sambhar",
     "category": "Food",
     "points": 2,
-    "hints": "A fluffy, fermented staple often paired with sambar."
+    "hints": "A fluffy, fermented staple paired with lentils"
   },
   {
     "id": "fd017",
-    "title": "Aloo Gobi",
+    "title": "Paneer 65",
     "category": "Food",
-    "points": 2,
-    "hints": "A beloved dish you’ll find argued over with love."
+    "points": 1,
+    "hints": "Cottage cheese tossed in a lot of spices"
   },
   {
     "id": "fd018",
     "title": "Kulfi",
     "category": "Food",
-    "points": 3,
-    "hints": "A beloved dish you’ll find argued over with love."
+    "points": 1,
+    "hints": "Indian version of ice-cream"
   },
   {
     "id": "fd019",
     "title": "Paratha",
     "category": "Food",
-    "points": 2,
-    "hints": "A beloved dish you’ll find argued over with love."
+    "points": 1,
+    "hints": "Bread that can be stuffed with a number of different things"
   },
   {
     "id": "fd020",
     "title": "Dal Tadka",
     "category": "Food",
-    "points": 2,
-    "hints": "A hearty, home‑style curry that tastes like comfort."
+    "points": 1,
+    "hints": "Yellow lentils with a smoky finish that warms the soul"
   },
   {
     "id": "fd021",
     "title": "Poha",
     "category": "Food",
     "points": 2,
-    "hints": "A cozy breakfast favorite cooked to gentle perfection."
+    "hints": "Flattened rice kissed with turmeric and peanuts"
   },
   {
     "id": "fd022",
     "title": "Upma",
     "category": "Food",
     "points": 2,
-    "hints": "A cozy breakfast favorite cooked to gentle perfection."
+    "hints": "Savory semolina cooked till soft and spiced just right"
   },
   {
     "id": "fd023",
     "title": "Medu Vada",
     "category": "Food",
-    "points": 3,
-    "hints": "A fluffy, fermented staple often paired with sambar."
+    "points": 2,
+    "hints": "Crisp golden rings that stay fluffy inside"
   },
   {
     "id": "fd024",
     "title": "Rava Kesari",
     "category": "Food",
     "points": 3,
-    "hints": "A festival sweet that sticks to smiles."
+    "hints": "A saffron tinted dessert that melts like sunshine"
   },
   {
     "id": "fd025",
     "title": "Pongal",
     "category": "Food",
     "points": 3,
-    "hints": "A cozy breakfast favorite cooked to gentle perfection."
+    "hints": "Rice and lentils slow cooked till creamy and comforting."
   },
   {
     "id": "fd026",
     "title": "Appam",
     "category": "Food",
     "points": 3,
-    "hints": "A fermented rice‑lentil crepe that’s crisp and lacy."
+    "hints": "Soft, lacy pancakes with a hint of coconut"
   },
   {
     "id": "fd027",
     "title": "Puttu",
     "category": "Food",
-    "points": 3,
-    "hints": "A beloved dish you’ll find argued over with love."
+    "points": 4,
+    "hints": "Steamed rice cylinders layered with grated coconut"
   },
   {
     "id": "fd028",
     "title": "Kozhukattai",
     "category": "Food",
     "points": 4,
-    "hints": "A festival sweet that sticks to smiles."
+    "hints": "Sweet steamed dumplings offered to the elephant headed god"
   },
   {
     "id": "fd029",
     "title": "Mysore Pak",
     "category": "Food",
-    "points": 3,
-    "hints": "A festival sweet that sticks to smiles."
+    "points": 4,
+    "hints": "Golden fudge that crumbles at the first bite named after a city"
   },
   {
     "id": "fd030",
     "title": "Rasgulla",
     "category": "Food",
-    "points": 2,
-    "hints": "A festival sweet that sticks to smiles."
+    "points": 1,
+    "hints": "Soft white spheres soaking in sugar syrup"
   },
   {
     "id": "fd031",
     "title": "5 Star",
     "category": "Food",
-    "points": 3,
-    "hints": "A nostalgic sweet that tastes like childhood."
+    "points": 2,
+    "hints": "Chocolate caramel bar that defined 90s snack time"
   },
   {
     "id": "fd032",
     "title": "Mattar Paneer",
     "category": "Food",
     "points": 2,
-    "hints": "Silky cottage cheese simmered in a rich, spiced gravy."
+    "hints": "Cottage cheese and a legume in a mildly spiced tomato gravy"
   },
   {
     "id": "fd033",
-    "title": "Golgappe",
+    "title": "Chaat",
     "category": "Food",
-    "points": 3,
-    "hints": "Puffed shells bursting with tangy, spicy water."
+    "points": 1,
+    "hints": "Generic term for a street food staple"
   },
   {
     "id": "fd034",
     "title": "Bisi Belle Bhaat",
     "category": "Food",
     "points": 4,
-    "hints": "A comforting rice preparation cooked with spices and veg."
+    "hints": "A South Indian twist on khichdi with bold masala notes"
   },
   {
     "id": "fd035",
     "title": "Mango Bite",
     "category": "Food",
     "points": 2,
-    "hints": "A nostalgic sweet that tastes like childhood."
+    "hints": "Hard candy bursting with tropical fruit nostalgia"
   },
   {
     "id": "fd036",
     "title": "Paan ki Pichkaari",
     "category": "Food",
-    "points": 2,
-    "hints": "A nostalgic sweet that tastes like childhood."
+    "points": 4,
+    "hints": "Spitting out betel leaf"
   },
   {
     "id": "tv001",
     "title": "Kyunki Saas Bhi Kabhi Bahu Thi",
     "category": "TV Shows",
-    "points": 2,
-    "hints": "A popular series that became appointment viewing."
+    "points": 1,
+    "hints": "The daily Ekta Kapoor soap that ruled living rooms for years"
   },
   {
     "id": "tv002",
     "title": "Kaun Banega Crorepati",
     "category": "TV Shows",
     "points": 1,
-    "hints": "A quiz show where lifelines could change lives."
+    "hints": "Where lifelines and one big question could change everything"
   },
   {
     "id": "tv003",
     "title": "Taarak Mehta Ka Ooltah Chashmah",
     "category": "TV Shows",
-    "points": 2,
-    "hints": "A housing‑society comedy that became daily comfort food."
+    "points": 1,
+    "hints": "A society full of laughter, quirks, and moral lessons"
   },
   {
     "id": "tv004",
     "title": "CID",
     "category": "TV Shows",
-    "points": 2,
-    "hints": "A detective show immortalized by punchy one‑liners."
+    "points": 1,
+    "hints": "Crime never rested, and neither did this iconic team"
   },
   {
     "id": "tv005",
     "title": "The Kapil Sharma Show",
     "category": "TV Shows",
     "points": 2,
-    "hints": "A popular series that became appointment viewing."
+    "hints": "Where every celebrity came to laugh at themselves"
   },
   {
     "id": "tv006",
     "title": "Bigg Boss",
     "category": "TV Shows",
-    "points": 2,
-    "hints": "A popular series that became appointment viewing."
+    "points": 1,
+    "hints": "Locked in a house, watched by millions."
   },
   {
     "id": "tv007",
     "title": "Indian Idol",
     "category": "TV Shows",
-    "points": 2,
-    "hints": "A popular series that became appointment viewing."
+    "points": 1,
+    "hints": "Dreams, drama and high notes on national TV"
   },
   {
     "id": "tv008",
     "title": "Dance India Dance",
     "category": "TV Shows",
-    "points": 3,
-    "hints": "A popular series that became appointment viewing."
+    "points": 2,
+    "hints": "Where every move made someone a star"
   },
   {
     "id": "tv009",
     "title": "Roadies",
     "category": "TV Shows",
     "points": 3,
-    "hints": "A popular series that became appointment viewing."
+    "hints": "Grit, travel and endless tasks for the fearless"
   },
   {
     "id": "tv010",
     "title": "Splitsvilla",
     "category": "TV Shows",
     "points": 3,
-    "hints": "A popular series that became appointment viewing."
+    "hints": "Love, rivalry and drama on a sun-soaked island"
   },
   {
     "id": "tv011",
     "title": "Sarabhai vs Sarabhai",
     "category": "TV Shows",
-    "points": 3,
-    "hints": "A posh‑meets‑middle‑class comedy with perfect timing."
+    "points": 2,
+    "hints": "When high society met middle class madness"
   },
   {
     "id": "tv012",
     "title": "Khichdi",
     "category": "TV Shows",
-    "points": 3,
-    "hints": "A popular series that became appointment viewing."
+    "points": 2,
+    "hints": "Absurd family comedy that became cult classic"
   },
   {
     "id": "tv013",
     "title": "Office Office",
     "category": "TV Shows",
     "points": 3,
-    "hints": "A satire on red tape that never got old."
+    "hints": "A hilarious take on everyday bureaucracy"
   },
   {
     "id": "tv014",
     "title": "Yeh Rishta Kya Kehlata Hai",
     "category": "TV Shows",
     "points": 4,
-    "hints": "A popular series that became appointment viewing."
+    "hints": "One of the longest-running family sagas on TV"
   },
   {
     "id": "tv015",
     "title": "Balika Vadhu",
     "category": "TV Shows",
     "points": 3,
-    "hints": "A popular series that became appointment viewing."
+    "hints": "A powerful drama that began with child marriage"
   },
   {
     "id": "tv016",
-    "title": "Anupamaa",
-    "category": "TV Shows",
-    "points": 3,
-    "hints": "A popular series that became appointment viewing."
-  },
-  {
-    "id": "tv017",
     "title": "Mirzapur",
     "category": "TV Shows",
     "points": 3,
-    "hints": "A lawless heartland saga loaded with grudges."
+    "hints": "A gun-filled tale of power and revenge from the badlands"
   },
   {
-    "id": "tv018",
+    "id": "tv017",
     "title": "Sacred Games",
     "category": "TV Shows",
     "points": 3,
-    "hints": "A gritty thriller that put streaming on the map."
+    "hints": "The show with Saif Ali Khan that redefined Indian streaming"
   },
   {
-    "id": "tv019",
+    "id": "tv018",
     "title": "Scam 1992",
     "category": "TV Shows",
     "points": 4,
-    "hints": "A stock‑market saga powered by swagger and scams."
+    "hints": "The rise and fall of a stock market legend"
   },
   {
-    "id": "tv020",
-    "title": "The Family Man",
-    "category": "TV Shows",
-    "points": 3,
-    "hints": "A spy juggling duty, danger, and school runs."
-  },
-  {
-    "id": "tv021",
-    "title": "Arya",
-    "category": "TV Shows",
-    "points": 3,
-    "hints": "A popular series that became appointment viewing."
-  },
-  {
-    "id": "tv022",
-    "title": "Mumbai Diaries 26/11",
-    "category": "TV Shows",
-    "points": 4,
-    "hints": "A popular series that became appointment viewing."
-  },
-  {
-    "id": "tv023",
-    "title": "Rocket Boys",
-    "category": "TV Shows",
-    "points": 4,
-    "hints": "A period drama about launching big dreams."
-  },
-  {
-    "id": "tv024",
-    "title": "Gullak",
-    "category": "TV Shows",
-    "points": 3,
-    "hints": "A warm slice‑of‑life about a middle‑class family."
-  },
-  {
-    "id": "tv025",
+    "id": "tv019",
     "title": "Panchayat",
     "category": "TV Shows",
     "points": 3,
-    "hints": "A quiet village dramedy about small wins."
+    "hints": "A man's quiet journey through village life"
+  },
+  {
+    "id": "tv020",
+    "title": "Kota Factory",
+    "category": "TV Shows",
+    "points": 4,
+    "hints": "A black and white look at students chasing big dreams"
+  },
+  {
+    "id": "tv021",
+    "title": "Permanent Roommates",
+    "category": "TV Shows",
+    "points": 4,
+    "hints": "A modern love story born from long distance and doubt."
+  },
+  {
+    "id": "tv022",
+    "title": "Kahaani Ghar Ghar Ki",
+    "category": "TV Shows",
+    "points": 1,
+    "hints": "An Ekta Kapoor saas-bahu staple"
+  },
+  {
+    "id": "tv023",
+    "title": "Kasauti Zindagi Ki",
+    "category": "TV Shows",
+    "points": 1,
+    "hints": "Anurag and Prerna's star crossed saga with Komolika's iconic entries and exits"
+  },
+  {
+    "id": "tv024",
+    "title": "Kuch Toh Gadbad Hai",
+    "category": "TV Shows",
+    "points": 2,
+    "hints": "ACP Pradyuman's classic line from CID"
+  },
+  {
+    "id": "tv025",
+    "title": "Daya Darwaaza Tod Do",
+    "category": "TV Shows",
+    "points": 2,
+    "hints": "ACP Pradyuman's order to his strongest cop"
   },
   {
     "id": "tv026",
-    "title": "Aspirants",
+    "title": "Jethalal Champaklal Gada",
     "category": "TV Shows",
-    "points": 3,
-    "hints": "A popular series that became appointment viewing."
-  },
-  {
-    "id": "tv027",
-    "title": "Kota Factory",
-    "category": "TV Shows",
-    "points": 3,
-    "hints": "A popular series that became appointment viewing."
-  },
-  {
-    "id": "tv028",
-    "title": "Permanent Roommates",
-    "category": "TV Shows",
-    "points": 3,
-    "hints": "A popular series that became appointment viewing."
-  },
-  {
-    "id": "tv029",
-    "title": "Pitchers",
-    "category": "TV Shows",
-    "points": 3,
-    "hints": "A popular series that became appointment viewing."
-  },
-  {
-    "id": "tv030",
-    "title": "Flames",
-    "category": "TV Shows",
-    "points": 3,
-    "hints": "A popular series that became appointment viewing."
+    "points": 2,
+    "hints": "Gada Electronics' harried owner from Gokuldham, forever in society trouble"
   },
   {
     "id": "ft001",
     "title": "Diwali",
     "category": "Festivals",
     "points": 1,
-    "hints": "Lights, sweets, and fresh beginnings."
+    "hints": "Festival of light"
   },
   {
     "id": "ft002",
@@ -1508,259 +1466,364 @@
     "id": "ft003",
     "title": "Dussehra",
     "category": "Festivals",
-    "points": 2,
-    "hints": "Nine nights of dance and devotion."
+    "points": 1,
+    "hints": "Burning of Raavan"
   },
   {
     "id": "ft004",
     "title": "Eid ul-Fitr",
     "category": "Festivals",
     "points": 2,
-    "hints": "Fasting, feasting, and embraces at moonrise."
+    "hints": "Fasting, feasting, and embraces at moonrise"
   },
   {
     "id": "ft005",
     "title": "Christmas",
     "category": "Festivals",
     "points": 1,
-    "hints": "Processions, sweets, and a calendar marked in color."
+    "hints": "Festival to mark the birth of Baby Jesus"
   },
   {
     "id": "ft006",
     "title": "Ganesh Chaturthi",
     "category": "Festivals",
-    "points": 2,
-    "hints": "Idols, drums, and streets turned seas."
+    "points": 1,
+    "hints": "Idols, drums and streets filled with people going to the sea"
   },
   {
     "id": "ft007",
     "title": "Navratri",
     "category": "Festivals",
     "points": 2,
-    "hints": "Nine nights of dance and devotion."
+    "hints": "Nine nights of dance and devotion"
   },
   {
     "id": "ft008",
     "title": "Karva Chauth",
     "category": "Festivals",
-    "points": 3,
-    "hints": "Processions, sweets, and a calendar marked in color."
+    "points": 2,
+    "hints": "A day of fasting and moonlight love stories"
   },
   {
     "id": "ft009",
     "title": "Raksha Bandhan",
     "category": "Festivals",
-    "points": 2,
-    "hints": "A sibling vow sealed with sweets."
+    "points": 1,
+    "hints": "A sacred thread tying hearts beyond distance"
   },
   {
     "id": "ft010",
     "title": "Janmashtami",
     "category": "Festivals",
-    "points": 3,
-    "hints": "Processions, sweets, and a calendar marked in color."
+    "points": 2,
+    "hints": "Midnight songs for the mischievous divine child"
   },
   {
     "id": "ft011",
     "title": "Onam",
     "category": "Festivals",
-    "points": 3,
-    "hints": "Harvest, homecomings, and community songs."
+    "points": 4,
+    "hints": "Flower carpets, feasts and a king's yearly homecoming"
   },
   {
     "id": "ft012",
     "title": "Pongal",
     "category": "Festivals",
-    "points": 3,
-    "hints": "Harvest, homecomings, and community songs."
+    "points": 4,
+    "hints": "Boiling rice under the sun to thank the harvest"
   },
   {
     "id": "ft013",
     "title": "Baisakhi",
     "category": "Festivals",
-    "points": 3,
-    "hints": "Prayers, langar, and shared service."
+    "points": 4,
+    "hints": "Fields in bloom and drums that never stop"
   },
   {
     "id": "ft014",
     "title": "Durga Puja",
     "category": "Festivals",
-    "points": 2,
-    "hints": "Nine nights of dance and devotion."
+    "points": 3,
+    "hints": "Ten days of art, rhythm and divine triumph"
   },
   {
     "id": "ft015",
     "title": "Kumbh Mela",
     "category": "Festivals",
-    "points": 4,
-    "hints": "Processions, sweets, and a calendar marked in color."
+    "points": 3,
+    "hints": "Millions gather to bathe where faith meets rivers"
   },
   {
     "id": "ft016",
     "title": "Pushkar Fair",
     "category": "Festivals",
     "points": 4,
-    "hints": "Processions, sweets, and a calendar marked in color."
+    "hints": "Camels, color and the sacred sands of Rajasthan"
   },
   {
     "id": "ft017",
     "title": "Hornbill Festival",
     "category": "Festivals",
     "points": 4,
-    "hints": "Processions, sweets, and a calendar marked in color."
+    "hints": "A tribal carnival celebrating unity in heritage in North East India"
   },
   {
     "id": "ft018",
     "title": "Thrissur Pooram",
     "category": "Festivals",
     "points": 4,
-    "hints": "Processions, sweets, and a calendar marked in color."
+    "hints": "Elephants, fireworks, and Kerala's grandest procession"
   },
   {
     "id": "ft019",
-    "title": "Kumbh Fair",
+    "title": "Chhath Puja",
     "category": "Festivals",
-    "points": 3,
-    "hints": "Processions, sweets, and a calendar marked in color."
+    "points": 4,
+    "hints": "Devotees offer prayers to the setting and rising sun"
   },
   {
     "id": "ft020",
     "title": "Bihu",
     "category": "Festivals",
-    "points": 3,
-    "hints": "Harvest, homecomings, and community songs."
+    "points": 4,
+    "hints": "Dance, drums and joy marking Assam's harvest season"
   },
   {
     "id": "ad001",
     "title": "Nirma",
     "category": "Iconic Ads",
-    "points": 2,
-    "hints": "A detergent ad remembered for the twirling girl in a white frock."
+    "points": 1,
+    "hints": "A detergent ad remembered for the twirling girl in a white frock"
   },
   {
     "id": "ad002",
     "title": "Ramesh Suresh",
     "category": "Iconic Ads",
     "points": 4,
-    "hints": "A catchphrase or jingle that refuses to leave your head."
+    "hints": "5 Star ad characters"
   },
   {
     "id": "ad003",
     "title": "Santoor",
     "category": "Iconic Ads",
-    "points": 4,
-    "hints": "A soap ad famous for the ‘young mom’ reveal."
+    "points": 3,
+    "hints": "A soap ad famous for the young mom reveal"
   },
   {
     "id": "ad004",
     "title": "Vicco Turmeric",
     "category": "Iconic Ads",
     "points": 3,
-    "hints": "An ayurvedic jingle the nation can still sing."
+    "hints": "An ayurvedic jingle the nation can still sing"
   },
   {
     "id": "ad005",
     "title": "Ambuja Cement",
     "category": "Iconic Ads",
     "points": 3,
-    "hints": "Walls so strong even jokes couldn’t break them."
+    "hints": "Walls so strong even jokes couldn't break them"
   },
   {
     "id": "ad006",
     "title": "Vasmol",
     "category": "Iconic Ads",
-    "points": 2,
-    "hints": "A classic hair dye ad with a melodious promise."
+    "points": 4,
+    "hints": "A classic hair dye ad with a melodious promise"
   },
   {
     "id": "ad007",
-    "title": "Tide",
+    "title": "Tide - Chauk Gaye",
     "category": "Iconic Ads",
     "points": 1,
-    "hints": "A detergent ad that made brightness a benchmark."
+    "hints": "A detergent ad that made brightness a benchmark"
   },
   {
     "id": "ad008",
     "title": "Feviquick",
     "category": "Iconic Ads",
-    "points": 2,
-    "hints": "Instant fixes sold with instant punchlines."
+    "points": 1,
+    "hints": "Instant glue fixes sold with instant punchlines"
   },
   {
     "id": "ad009",
     "title": "Daag Ache Hai",
     "category": "Iconic Ads",
     "points": 2,
-    "hints": "A campaign that said stains can be good."
+    "hints": "A campaign slogan by Surf Excel"
   },
   {
     "id": "ad010",
     "title": "Dil Maange More",
     "category": "Iconic Ads",
     "points": 3,
-    "hints": "A cola catchphrase that became everyday slang."
+    "hints": "A cola catchphrase that became everyday slang"
   },
   {
     "id": "ad011",
-    "title": "Kaisi jeeb laplapaayi",
+    "title": "Kaisi Jeeb Laplapaayi",
     "category": "Iconic Ads",
     "points": 2,
-    "hints": "A tongue‑twisting jingle everyone mimicked."
+    "hints": "A tongue-twisting jingle for a chewing gum"
   },
   {
     "id": "ad012",
     "title": "MRF ZLX",
     "category": "Iconic Ads",
     "points": 2,
-    "hints": "A tyre spot that leaned on grip and grit."
+    "hints": "As Virat Kohli said - you can bet on it"
   },
   {
     "id": "ad013",
     "title": "Humara Bajaj",
     "category": "Iconic Ads",
     "points": 4,
-    "hints": "A scooter anthem that turned into pure nostalgia."
+    "hints": "A scooter anthem that turned into pure nostalgia"
+  },
+  {
+    "id": "ad014",
+    "title": "Lijjat Papad",
+    "category": "Iconic Ads",
+    "points": 4,
+    "hints": "The jingle with a bunny and a crispy crunch"
+  },
+  {
+    "id": "ad015",
+    "title": "Amul - The Taste of India",
+    "category": "Iconic Ads",
+    "points": 4,
+    "hints": "Topical wit served on every billboard for decades"
+  },
+  {
+    "id": "ad016",
+    "title": "Googly Woogly Woosh",
+    "category": "Iconic Ads",
+    "points": 4,
+    "hints": "Ponds jingle"
+  },
+  {
+    "id": "ad017",
+    "title": "Cadbury Dairy Milk - Kuch Khaas Hai",
+    "category": "Iconic Ads",
+    "points": 3,
+    "hints": "The dancing girl on the cricket field made hearts melt"
+  },
+  {
+    "id": "ad018",
+    "title": "Asli Masale Sach Sach",
+    "category": "Iconic Ads",
+    "points": 1,
+    "hints": "MDH ad jingle"
+  },
+  {
+    "id": "ad019",
+    "title": "Vodafone ZooZoos",
+    "category": "Iconic Ads",
+    "points": 2,
+    "hints": "White, round creatures that made texting cool again"
+  },
+  {
+    "id": "ad020",
+    "title": "Happydent",
+    "category": "Iconic Ads",
+    "points": 3,
+    "hints": "Smiles so bright they could light up palaces"
+  },
+  {
+    "id": "ad021",
+    "title": "Chaar Boondo Waala",
+    "category": "Iconic Ads",
+    "points": 4,
+    "hints": "Jingle for Ujala detergent"
+  },  
+  {
+    "id": "ad022",
+    "title": "Jab Ghar Ki Raunak Badhani Ho",
+    "category": "Iconic Ads",
+    "points": 4,
+    "hints": "Nerolal paints ad jingle"
+  },  
+  {
+    "id": "ad023",
+    "title": "Aaya Mausam Thande Thande",
+    "category": "Iconic Ads",
+    "points": 4,
+    "hints": "Jingle for Dermicool powder"
+  },
+  {
+    "id": "ad024",
+    "title": "Dimag Ki Batti Jala De",
+    "category": "Iconic Ads",
+    "points": 2,
+    "hints": "Mentos slogan"
+  },
+  {
+    "id": "ad025",
+    "title": "Dar Ke Aage Jeet Hai",
+    "category": "Iconic Ads",
+    "points": 2,
+    "hints": "Mountain Dew slogan"
+  },
+  {
+    "id": "ad026",
+    "title": "Clear Hai",
+    "category": "Iconic Ads",
+    "points": 2,
+    "hints": "Sprite slogan"
+  },
+  {
+    "id": "ad027",
+    "title": "Taste The Thunder",
+    "category": "Iconic Ads",
+    "points": 1,
+    "hints": "Thums Up slogan"
+  },
+  {
+    "id": "ad028",
+    "title": "Nazar Hati Durghatna Ghati",
+    "category": "Iconic Ads",
+    "points": 4,
+    "hints": "Lenskart slogan"
   },
   {
     "id": "ms001",
     "title": "Danish Cookie Box",
     "category": "Misc",
     "points": 3,
-    "hints": "A tin that promises biscuits but hides sewing kits."
+    "hints": "A tin that promises biscuits but hides sewing kits"
   },
   {
     "id": "ms002",
     "title": "Aakashvaani",
     "category": "Misc",
     "points": 2,
-    "hints": "A familiar call sign that once meant the news was here."
+    "hints": "All India radio station"
   },
   {
     "id": "ms003",
     "title": "Bhidu",
     "category": "Misc",
-    "points": 2,
-    "hints": "Slang for a close friend said with swagger."
+    "points": 3,
+    "hints": "Slang for a close friend said with swagger"
   },
   {
     "id": "ms004",
     "title": "Chomu",
     "category": "Misc",
-    "points": 3,
-    "hints": "A playful insult for someone a bit slow on the uptake."
+    "points": 4,
+    "hints": "A playful insult for someone a bit slow on the uptake"
   },
   {
     "id": "ms005",
     "title": "Tube light",
     "category": "Misc",
     "points": 2,
-    "hints": "A nickname for the person who gets the joke last."
+    "hints": "A nickname for the person who gets the joke last"
   },
   {
     "id": "ms006",
     "title": "Marine Drive",
     "category": "Misc",
-    "points": 3,
-    "hints": "A seaside promenade straight out of postcards."
+    "points": 1,
+    "hints": "A seaside promenade straight out of postcards"
   }
 ]
