@@ -1,6 +1,6 @@
 import './styles.css';
 import gameStore from './store.js';
-import { getCategories } from './cards.js';
+import { getCategories, getMinimumSelectedCategories } from './cards.js';
 import { validatePassword, isAuthenticated, setAuthenticated, logout } from './auth.js';
 
 // Initialize the Chhota Pandit app
@@ -759,8 +759,9 @@ function handleStartGame() {
 
   // Get selected categories
   const selectedCategories = getSelectedCategories();
-  if (selectedCategories.length === 0) {
-    validationContainer.textContent = 'Please select at least one category.';
+  const minCats = getMinimumSelectedCategories();
+  if (selectedCategories.length < minCats) {
+    validationContainer.textContent = `Please select at least ${minCats} categories.`;
     validationContainer.classList.remove('hidden');
     validationContainer.classList.add('error');
     return;

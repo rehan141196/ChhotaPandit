@@ -830,14 +830,14 @@
     "title": "Sardar Patel",
     "category": "Historical",
     "points": 3,
-    "hints": "The Iron Man from Gujarat who unified a patchwork of states."
+    "hints": "The Iron Man from Gujarat who unified a patchwork of states"
   },
   {
     "id": "hf005",
     "title": "Dr. APJ Abdul Kalam",
     "category": "Historical",
     "points": 2,
-    "hints": "A scientist president who inspired with simplicity."
+    "hints": "A scientist president who inspired with simplicity"
   },
   {
     "id": "hf006",
@@ -1019,7 +1019,7 @@
     "title": "Biryani",
     "category": "Food",
     "points": 1,
-    "hints": "A fragrant rice dish layered with spiced meat or vegetables."
+    "hints": "A fragrant rice dish layered with spiced meat or vegetables"
   },
   {
     "id": "fd002",
@@ -1089,7 +1089,7 @@
     "title": "Gulab Jamun",
     "category": "Food",
     "points": 2,
-    "hints": "Fried milk solids that melt into rose scented syrup."
+    "hints": "Fried milk solids that melt into rose scented syrup"
   },
   {
     "id": "fd012",
@@ -1187,7 +1187,7 @@
     "title": "Pongal",
     "category": "Food",
     "points": 3,
-    "hints": "Rice and lentils slow cooked till creamy and comforting."
+    "hints": "Rice and lentils slow cooked till creamy and comforting"
   },
   {
     "id": "fd026",
@@ -1306,7 +1306,7 @@
     "title": "Bigg Boss",
     "category": "TV Shows",
     "points": 1,
-    "hints": "Locked in a house, watched by millions."
+    "hints": "Locked in a house, watched by millions"
   },
   {
     "id": "tv007",
@@ -1411,7 +1411,7 @@
     "title": "Permanent Roommates",
     "category": "TV Shows",
     "points": 4,
-    "hints": "A modern love story born from long distance and doubt."
+    "hints": "A modern love story born from long distance and doubt"
   },
   {
     "id": "tv022",
@@ -1460,7 +1460,7 @@
     "title": "Holi",
     "category": "Festivals",
     "points": 1,
-    "hints": "Colors flying and grudges forgiven."
+    "hints": "Colors flying and grudges forgiven"
   },
   {
     "id": "ft003",
@@ -1814,7 +1814,7 @@
   },
   {
     "id": "ms005",
-    "title": "Tube light",
+    "title": "Tubelight",
     "category": "Misc",
     "points": 2,
     "hints": "A nickname for the person who gets the joke last"

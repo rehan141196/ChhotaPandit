@@ -90,7 +90,7 @@ describe('Cards Module', () => {
     it('should reject empty categories', () => {
       const result = validateDeckConstraints([], 48);
       expect(result.isValid).toBe(false);
-      expect(result.message).toContain('At least one category must be selected');
+      expect(result.message).toContain('At least 1 categories must be selected');
     });
 
     it('should reject insufficient total cards', () => {
