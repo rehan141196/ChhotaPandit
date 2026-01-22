@@ -23,12 +23,13 @@ The game is played over **three rounds** using the **same set of cards**. With e
 ### Round 1: **Free Description**
 - On your turn, draw a card.
 - Describe the entry in any way **except** saying the actual word/name or using direct rhymes.
+- Using a direct English translation of any word on the card is not allowed.
 - Your team keeps guessing until they get it right or time runs out.
 
 ### Round 2: **One Word Only**
 - Use the **same cards** from Round 1.
 - You may say **only one word** as a clue.
-- Gestures, sounds, and expressions are allowed.
+- Gestures, sounds, and expressions are not allowed.
 
 ### Round 3: **Charades**
 - Use the **same cards** again.
@@ -41,5 +42,5 @@ The game is played over **three rounds** using the **same set of cards**. With e
 - **Illegal clue** (saying the word, spelling it, etc.): Return the card to the pile and draw a new one.
 
 ### Timing
-- Suggested **60 seconds per turn**.
+- Set to **60 seconds per turn**.
 - If time expires mid-card, return that card to the pile.

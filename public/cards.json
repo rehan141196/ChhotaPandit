@@ -1740,7 +1740,7 @@
     "title": "Jab Ghar Ki Raunak Badhani Ho",
     "category": "Iconic Ads",
     "points": 4,
-    "hints": "Nerolal paints ad jingle"
+    "hints": "Nerolac paints ad jingle"
   },  
   {
     "id": "ad023",
@@ -1816,7 +1816,7 @@
     "id": "ms005",
     "title": "Tubelight",
     "category": "Misc",
-    "points": 2,
+    "points": 3,
     "hints": "A nickname for the person who gets the joke last"
   },
   {
@@ -1825,5 +1825,40 @@
     "category": "Misc",
     "points": 1,
     "hints": "A seaside promenade straight out of postcards"
+  },
+  {
+    "id": "ms007",
+    "title": "Eid Ka Chaand",
+    "category": "Misc",
+    "points": 2,
+    "hints": "Term for someone who does not meet you very often"
+  },
+  {
+    "id": "ms008",
+    "title": "Sharmaji Ka Beta",
+    "category": "Misc",
+    "points": 2,
+    "hints": "Term used for an ideal child"
+  },
+  {
+    "id": "ms009",
+    "title": "Jugaad",
+    "category": "Misc",
+    "points": 2,
+    "hints": "Term for Indian ingenuity in everyday life"
+  },
+  {
+    "id": "ms010",
+    "title": "Jhaadu",
+    "category": "Misc",
+    "points": 2,
+    "hints": "Used by mothers to hit children"
+  },
+  {
+    "id": "ms011",
+    "title": "Kambal Pitai",
+    "category": "Misc",
+    "points": 3,
+    "hints": "A special way of beating up a friend"
   }
 ]
