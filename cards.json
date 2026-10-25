@@ -511,6 +511,13 @@
     "hints": "Papa Ranjit's dialogue from Housefull"
   },
   {
+    "id": "bw074",
+    "title": "50 Rupiya kaat overacting ka",
+    "category": "Bollywood",
+    "points": 3,
+    "hints": "Hera Pheri dialog when you try too hard"
+  },
+  {
     "id": "sp001",
     "title": "Virat Kohli",
     "category": "Sports",
@@ -991,7 +998,7 @@
     "title": "Indira Gandhi",
     "category": "Historical",
     "points": 2,
-    "hints": "Prime Minister of India who delcared the Emergency"
+    "hints": "Prime Minister of India who declared the Emergency"
   },
   {
     "id": "hf028",
@@ -1740,7 +1747,7 @@
     "title": "Jab Ghar Ki Raunak Badhani Ho",
     "category": "Iconic Ads",
     "points": 4,
-    "hints": "Nerolal paints ad jingle"
+    "hints": "Nerolac paints ad jingle"
   },  
   {
     "id": "ad023",
@@ -1816,7 +1823,7 @@
     "id": "ms005",
     "title": "Tubelight",
     "category": "Misc",
-    "points": 2,
+    "points": 3,
     "hints": "A nickname for the person who gets the joke last"
   },
   {
@@ -1825,5 +1832,96 @@
     "category": "Misc",
     "points": 1,
     "hints": "A seaside promenade straight out of postcards"
+  },
+  {
+    "id": "ms007",
+    "title": "Eid Ka Chaand",
+    "category": "Misc",
+    "points": 2,
+    "hints": "Term for someone who does not meet you very often"
+  },
+  {
+    "id": "ms008",
+    "title": "Sharmaji Ka Beta",
+    "category": "Misc",
+    "points": 2,
+    "hints": "Term used for an ideal child"
+  },
+  {
+    "id": "ms009",
+    "title": "Jugaad",
+    "category": "Misc",
+    "points": 2,
+    "hints": "Term for Indian ingenuity in everyday life"
+  },
+  {
+    "id": "ms010",
+    "title": "Jhaadu",
+    "category": "Misc",
+    "points": 2,
+    "hints": "Used by mothers to hit children"
+  },
+  {
+    "id": "ms011",
+    "title": "Kambal Pitai",
+    "category": "Misc",
+    "points": 3,
+    "hints": "A special way of beating up a friend"
+  },
+  {
+    "id": "me001",
+    "title": "Bikk Gayi Gormint",
+    "category": "Memes",
+    "points": 2,
+    "hints": "Old Aunty ranting about corruption"
+  },
+  {
+    "id": "me002",
+    "title": "Pooja what is this behavior",
+    "category": "Memes",
+    "points": 1,
+    "hints": "Big Boss catfight scene"
+  },
+  {
+    "id": "me003",
+    "title": "Disappointed Pakistani Uncle",
+    "category": "Memes",
+    "points": 1,
+    "hints": "Cricket meme about Pakistani fielding"
+  },
+  {
+    "id": "me004",
+    "title": "Waqt badal diya, jazbaat badal diye",
+    "category": "Memes",
+    "points": 4,
+    "hints": "Pakistani cricket fan live TV rant"
+  },
+  {
+    "id": "me005",
+    "title": "Dekh raha hai Binod",
+    "category": "Memes",
+    "points": 2,
+    "hints": "Panchayat dialog that became a meme"
+  },
+  {
+    "id": "me006",
+    "title": "Abey Saale",
+    "category": "Memes",
+    "points": 4,
+    "hints": "Pakistan satire show dialog"
+  },
+  {
+    "id": "me007",
+    "title": "It's Done Bro",
+    "category": "Memes",
+    "points": 3,
+    "hints": "Salman Khan tweet about student protests"
+  },
+  {
+    "id": "me008",
+    "title": "Looking like a wow",
+    "category": "Memes",
+    "points": 2,
+    "hints": "So beautiful, so elegant"
   }
 ]
