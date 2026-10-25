@@ -511,6 +511,13 @@
     "hints": "Papa Ranjit's dialogue from Housefull"
   },
   {
+    "id": "bw074",
+    "title": "50 Rupiya kaat overacting ka",
+    "category": "Bollywood",
+    "points": 3,
+    "hints": "Hera Pheri dialog when you try too hard"
+  },
+  {
     "id": "sp001",
     "title": "Virat Kohli",
     "category": "Sports",
@@ -991,7 +998,7 @@
     "title": "Indira Gandhi",
     "category": "Historical",
     "points": 2,
-    "hints": "Prime Minister of India who delcared the Emergency"
+    "hints": "Prime Minister of India who declared the Emergency"
   },
   {
     "id": "hf028",
@@ -1860,5 +1867,61 @@
     "category": "Misc",
     "points": 3,
     "hints": "A special way of beating up a friend"
+  },
+  {
+    "id": "me001",
+    "title": "Bikk Gayi Gormint",
+    "category": "Memes",
+    "points": 2,
+    "hints": "Old Aunty ranting about corruption"
+  },
+  {
+    "id": "me002",
+    "title": "Pooja what is this behavior",
+    "category": "Memes",
+    "points": 1,
+    "hints": "Big Boss catfight scene"
+  },
+  {
+    "id": "me003",
+    "title": "Disappointed Pakistani Uncle",
+    "category": "Memes",
+    "points": 1,
+    "hints": "Cricket meme about Pakistani fielding"
+  },
+  {
+    "id": "me004",
+    "title": "Waqt badal diya, jazbaat badal diye",
+    "category": "Memes",
+    "points": 4,
+    "hints": "Pakistani cricket fan live TV rant"
+  },
+  {
+    "id": "me005",
+    "title": "Dekh raha hai Binod",
+    "category": "Memes",
+    "points": 2,
+    "hints": "Panchayat dialog that became a meme"
+  },
+  {
+    "id": "me006",
+    "title": "Abey Saale",
+    "category": "Memes",
+    "points": 4,
+    "hints": "Pakistan satire show dialog"
+  },
+  {
+    "id": "me007",
+    "title": "It's Done Bro",
+    "category": "Memes",
+    "points": 3,
+    "hints": "Salman Khan tweet about student protests"
+  },
+  {
+    "id": "me008",
+    "title": "Looking like a wow",
+    "category": "Memes",
+    "points": 2,
+    "hints": "So beautiful, so elegant"
   }
 ]
